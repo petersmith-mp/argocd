@@ -45,6 +45,11 @@ spec:
         - containerPort: 9080
         securityContext:
           runAsUser: 1000
+        resources:
+          requests:
+            cpu: "50m"
+          limits:
+            cpu: "100m"
 ---
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
@@ -56,7 +61,7 @@ spec:
     kind: Deployment
     name: details-v1
   minReplicas: 1
-  maxReplicas: 2
+  maxReplicas: 3
   metrics:
   - type: Resource
     resource:
@@ -112,6 +117,11 @@ spec:
         - containerPort: 9080
         securityContext:
           runAsUser: 1000
+        resources:
+          requests:
+            cpu: "50m"
+          limits:
+            cpu: "100m"
 ---
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
@@ -123,7 +133,7 @@ spec:
     kind: Deployment
     name: ratings-v1
   minReplicas: 1
-  maxReplicas: 1
+  maxReplicas: 2
   metrics:
   - type: Resource
     resource:
@@ -177,6 +187,11 @@ spec:
         image: docker.io/istio/examples-bookinfo-reviews-v1:1.16.2
         ports:
         - containerPort: 9080
+        resources:
+          requests:
+            cpu: "50m"
+          limits:
+            cpu: "100m"
         volumeMounts:
         - name: tmp
           mountPath: /tmp
@@ -212,6 +227,11 @@ spec:
         image: docker.io/istio/examples-bookinfo-reviews-v2:1.16.2
         ports:
         - containerPort: 9080
+        resources:
+          requests:
+            cpu: "50m"
+          limits:
+            cpu: "100m"
         volumeMounts:
         - name: tmp
           mountPath: /tmp
@@ -247,6 +267,11 @@ spec:
         image: docker.io/istio/examples-bookinfo-reviews-v3:1.16.2
         ports:
         - containerPort: 9080
+        resources:
+          requests:
+            cpu: "50m"
+          limits:
+            cpu: "100m"
         volumeMounts:
         - name: tmp
           mountPath: /tmp
@@ -268,7 +293,7 @@ spec:
     kind: Deployment
     name: reviews-v1
   minReplicas: 1
-  maxReplicas: 1
+  maxReplicas: 3
   metrics:
   - type: Resource
     resource:
@@ -287,7 +312,7 @@ spec:
     kind: Deployment
     name: reviews-v2
   minReplicas: 1
-  maxReplicas: 1
+  maxReplicas: 3
   metrics:
   - type: Resource
     resource:
@@ -306,7 +331,7 @@ spec:
     kind: Deployment
     name: reviews-v3
   minReplicas: 1
-  maxReplicas: 1
+  maxReplicas: 3
   metrics:
   - type: Resource
     resource:
@@ -361,6 +386,11 @@ spec:
         image: docker.io/istio/examples-bookinfo-productpage-v1:1.16.2
         ports:
         - containerPort: 9080
+        resources:
+          requests:
+            cpu: "50m"
+          limits:
+            cpu: "100m"
         volumeMounts:
         - name: tmp
           mountPath: /tmp
@@ -378,7 +408,7 @@ spec:
     kind: Deployment
     name: productpage-v1
   minReplicas: 1
-  maxReplicas: 1
+  maxReplicas: 3
   metrics:
   - type: Resource
     resource:
