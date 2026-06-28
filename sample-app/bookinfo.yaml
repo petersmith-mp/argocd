@@ -56,7 +56,7 @@ spec:
     kind: Deployment
     name: details-v1
   minReplicas: 1
-  maxReplicas: 5
+  maxReplicas: 1
   metrics:
   - type: Resource
     resource:
@@ -123,7 +123,7 @@ spec:
     kind: Deployment
     name: ratings-v1
   minReplicas: 1
-  maxReplicas: 5
+  maxReplicas: 1
   metrics:
   - type: Resource
     resource:
@@ -268,7 +268,7 @@ spec:
     kind: Deployment
     name: reviews-v1
   minReplicas: 1
-  maxReplicas: 5
+  maxReplicas: 1
   metrics:
   - type: Resource
     resource:
@@ -287,7 +287,7 @@ spec:
     kind: Deployment
     name: reviews-v2
   minReplicas: 1
-  maxReplicas: 5
+  maxReplicas: 1
   metrics:
   - type: Resource
     resource:
@@ -306,7 +306,7 @@ spec:
     kind: Deployment
     name: reviews-v3
   minReplicas: 1
-  maxReplicas: 5
+  maxReplicas: 1
   metrics:
   - type: Resource
     resource:
@@ -378,7 +378,7 @@ spec:
     kind: Deployment
     name: productpage-v1
   minReplicas: 1
-  maxReplicas: 5
+  maxReplicas: 1
   metrics:
   - type: Resource
     resource:
