@@ -231,7 +231,7 @@ spec:
           requests:
             cpu: "50m"
           limits:
-            cpu: "100m"
+            cpu: "200m"
         volumeMounts:
         - name: tmp
           mountPath: /tmp
@@ -271,7 +271,7 @@ spec:
           requests:
             cpu: "50m"
           limits:
-            cpu: "100m"
+            cpu: "200m"
         volumeMounts:
         - name: tmp
           mountPath: /tmp
