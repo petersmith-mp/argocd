@@ -293,6 +293,7 @@ metadata:
     app: productpage
     service: productpage
 spec:
+  type: ClusterIP
   ports:
   - port: 9080
     name: http
