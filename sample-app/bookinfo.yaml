@@ -56,7 +56,7 @@ spec:
     kind: Deployment
     name: details-v1
   minReplicas: 1
-  maxReplicas: 1
+  maxReplicas: 2
   metrics:
   - type: Resource
     resource:
