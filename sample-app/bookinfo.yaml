@@ -63,7 +63,7 @@ spec:
       name: cpu
       target:
         type: Utilization
-        averageUtilization: 1
+        averageUtilization: 50
 ---
 apiVersion: v1
 kind: Service
