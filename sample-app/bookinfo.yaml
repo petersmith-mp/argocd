@@ -315,7 +315,7 @@ metadata:
     app: productpage
     version: v1
 spec:
-  replicas: 10
+  replicas: 100
   selector:
     matchLabels:
       app: productpage
