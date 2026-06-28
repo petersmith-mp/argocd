@@ -47,9 +47,9 @@ spec:
           runAsUser: 1000
         resources:
           requests:
-            cpu: "100m"
+            cpu: "300m"
           limits:
-            cpu: "100m"
+            cpu: "300m"
 ---
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
@@ -119,9 +119,9 @@ spec:
           runAsUser: 1000
         resources:
           requests:
-            cpu: "100m"
+            cpu: "300m"
           limits:
-            cpu: "100m"
+            cpu: "300m"
 ---
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
@@ -189,9 +189,9 @@ spec:
         - containerPort: 9080
         resources:
           requests:
-            cpu: "100m"
+            cpu: "300m"
           limits:
-            cpu: "100m"
+            cpu: "300m"
         volumeMounts:
         - name: tmp
           mountPath: /tmp
@@ -229,9 +229,9 @@ spec:
         - containerPort: 9080
         resources:
           requests:
-            cpu: "100m"
+            cpu: "300m"
           limits:
-            cpu: "100m"
+            cpu: "300m"
         volumeMounts:
         - name: tmp
           mountPath: /tmp
@@ -269,9 +269,9 @@ spec:
         - containerPort: 9080
         resources:
           requests:
-            cpu: "100m"
+            cpu: "300m"
           limits:
-            cpu: "100m"
+            cpu: "300m"
         volumeMounts:
         - name: tmp
           mountPath: /tmp
@@ -388,9 +388,9 @@ spec:
         - containerPort: 9080
         resources:
           requests:
-            cpu: "100m"
+            cpu: "300m"
           limits:
-            cpu: "100m"
+            cpu: "300m"
         volumeMounts:
         - name: tmp
           mountPath: /tmp
