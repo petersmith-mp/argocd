@@ -47,7 +47,7 @@ spec:
           runAsUser: 1000
         resources:
           requests:
-            cpu: "50m"
+            cpu: "100m"
           limits:
             cpu: "100m"
 ---
@@ -119,7 +119,7 @@ spec:
           runAsUser: 1000
         resources:
           requests:
-            cpu: "50m"
+            cpu: "100m"
           limits:
             cpu: "100m"
 ---
@@ -133,7 +133,7 @@ spec:
     kind: Deployment
     name: ratings-v1
   minReplicas: 1
-  maxReplicas: 2
+  maxReplicas: 3
   metrics:
   - type: Resource
     resource:
@@ -189,9 +189,9 @@ spec:
         - containerPort: 9080
         resources:
           requests:
-            cpu: "50m"
+            cpu: "100m"
           limits:
-            cpu: "1000m"
+            cpu: "100m"
         volumeMounts:
         - name: tmp
           mountPath: /tmp
@@ -229,9 +229,9 @@ spec:
         - containerPort: 9080
         resources:
           requests:
-            cpu: "1000m"
+            cpu: "100m"
           limits:
-            cpu: "1000m"
+            cpu: "100m"
         volumeMounts:
         - name: tmp
           mountPath: /tmp
@@ -269,9 +269,9 @@ spec:
         - containerPort: 9080
         resources:
           requests:
-            cpu: "50m"
+            cpu: "100m"
           limits:
-            cpu: "1000m"
+            cpu: "100m"
         volumeMounts:
         - name: tmp
           mountPath: /tmp
@@ -388,7 +388,7 @@ spec:
         - containerPort: 9080
         resources:
           requests:
-            cpu: "50m"
+            cpu: "100m"
           limits:
             cpu: "100m"
         volumeMounts:
