@@ -191,7 +191,7 @@ spec:
           requests:
             cpu: "50m"
           limits:
-            cpu: "100m"
+            cpu: "1000m"
         volumeMounts:
         - name: tmp
           mountPath: /tmp
@@ -229,9 +229,9 @@ spec:
         - containerPort: 9080
         resources:
           requests:
-            cpu: "50m"
+            cpu: "1000m"
           limits:
-            cpu: "200m"
+            cpu: "1000m"
         volumeMounts:
         - name: tmp
           mountPath: /tmp
@@ -271,7 +271,7 @@ spec:
           requests:
             cpu: "50m"
           limits:
-            cpu: "200m"
+            cpu: "1000m"
         volumeMounts:
         - name: tmp
           mountPath: /tmp
